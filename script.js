@@ -26,19 +26,28 @@ window.onload = function(){
         }
     }
     
-    // Функция для работы с кнопками-цифрами и точкой
     function onDigitButtonClicked(digit) {
-        if(selectedOperation === null) {
-            // Если точка уже есть, не добавляем вторую
-            if(digit === '.' && a.includes('.')) return;
-            a += digit;
+        if (selectedOperation === null) {
+            if (digit === '.' && a.includes('.')) return;
+    
+            if (a === '0' && digit !== '.') {
+                a = digit;
+            } else {
+                a += digit;
+            }
             updateOutput(a === '' ? 0 : a);
         } else {
-            if(digit === '.' && b.includes('.')) return;
-            b += digit;
+            if (digit === '.' && b.includes('.')) return;
+    
+            if (b === '0' && digit !== '.') {
+                b = digit;
+            } else {
+                b += digit;
+            }
             updateOutput(b === '' ? 0 : b);
         }
     }
+    
     
     // Назначение обработчика на все кнопки-цифры
     digitButtons.forEach(button => {
@@ -230,16 +239,30 @@ window.onload = function(){
         }
     }
     
-    // Кнопка "000" – добавляет к текущему операнду сразу три нуля
     document.getElementById("btn_digit_000").onclick = function() {
-        if(selectedOperation === null) {
-            a += "000";
-            updateOutput(a);
+        if (selectedOperation === null) {
+
+            if(a === '' || a === '0') {
+                a = '0';
+                updateOutput(a);
+                return;
+            } else {
+                a += '000';
+                updateOutput(a);
+            }
         } else {
-            b += "000";
-            updateOutput(b);
+
+            if(b === '' || b === '0') {
+                b = '0';
+                updateOutput(b);
+                return;
+            } else {
+                b += '000';
+                updateOutput(b);
+            }
         }
     }
+    
     
     // Накапливаемое сложение (M+): прибавление текущего значения к памяти
     document.getElementById("btn_op_mplus").onclick = function() {

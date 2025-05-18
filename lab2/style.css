@@ -1,0 +1,216 @@
+/* Сброс отступов и базовые стили для body */
+body {
+  margin: 0;
+  padding: 0;
+  /* Фон с изображением, затемнение для ночной темы */
+  background: url('https://wallpapers.com/images/hd/solid-black-background-ar9dw3nlgu73aveb.jpg') center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ECEFF1;
+}
+  
+/* Дополнительный класс для светлой темы */
+body.light-theme {
+  background: #F5F5F5;
+  color: #696969;
+}
+
+body.light-theme #calculator {
+  background: #a4a4a4;
+  color: #000000;
+}
+
+body.light-theme .details-info {
+  background: #E0E0E0;
+  color: #333333;
+}
+
+body.light-theme .lab-purpose {
+  background: #E0E0E0;
+  color: #333333;
+}
+
+/* Центрирование и стилизация контейнера калькулятора */
+#calculator {
+  width: 360px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(49, 49, 49, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Стили для экрана результата калькулятора */
+.result {
+  width: 100%;
+  height: 70px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #1E1E1E;  
+  border-radius: 10px;  
+  text-align: right;
+  color: #FFD54F;      
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace; 
+  font-weight: bold;     
+  line-height: 70px;
+  box-sizing: border-box;
+}
+
+/* При смене цвета окна результата – дополнительный класс */
+.result.alternate {
+  background: #4CAF50;
+  color: #ffffff;
+}
+
+/* Общий стиль для строк с кнопками */
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+/* Базовый стиль для кнопок калькулятора */
+.my-btn {
+  width: 80px;
+  height: 60px;
+  margin: 5px 0;
+  border: none;
+  background: #424242;
+  color: #ECEFF1;
+  font-size: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s ease;
+  border-radius: 5px;
+}
+
+/* При наведении мышкой – другой цвет */
+.my-btn:hover {
+  background: #616161;
+}
+
+/* При нажатии на кнопку – эффект яркости */
+.my-btn:active {
+  filter: brightness(110%);
+}
+
+/* Основные операции */
+.my-btn.primary {
+  background: #fbe222; 
+  color: #ffffff;
+}
+
+/* Кнопки второстепенных операций */
+.my-btn.secondary {
+  background: #948f10;
+  color: #ffffff;
+}
+
+/* (=) */
+.my-btn.execute {
+  width: 170px;
+  border-radius: 0;
+}
+
+/* Кнопка для смены темы */
+.theme-btn {
+  display: block;
+  width: 100%;
+  height: 45px;
+  margin: 15px 0;
+  background: #4d4c23;
+  border: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.2s ease;
+}
+
+.theme-btn:hover {
+  background: #26A69A;
+}
+
+/* Стили для выпадающего списка */
+.dropdown-container {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.dropdown-container select {
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #757575;
+  background: #263238;
+  color: #ECEFF1;
+}
+
+/* Стили для сворачивающихся деталей (Автор) */
+.details-info {
+  background: #263238;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 6px;
+}
+.details-info summary {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* Стили для поля цели ЛР */
+.lab-purpose {
+  margin-top: 15px;
+  padding: 10px;
+  background: #424242;
+  border-radius: 6px;
+}
+.lab-purpose mark {
+  background-color: #FF5722;
+  color: #ffffff;
+  padding: 0 3px;
+  border-radius: 3px;
+}
+
+/* Стили для footer – GitHub-ссылка и нижняя надпись */
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+.github-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #E64A19;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: 0.2s ease;
+  font-weight: 300;
+}
+.github-btn:hover {
+  background: #F4511E;
+}
+.footer-text {
+  margin-top: 8px;
+  color: #B0BEC5;
+  font-weight: 300; 
+}
+
+/* Дополнительные уникальные стили для веб-ресурса калькулятора */
+@media (max-width: 400px) {
+  #calculator {
+    width: 90%;
+    padding: 15px;
+  }
+  .my-btn {
+    width: 70px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+  .result {
+    font-size: 1.8rem;
+    line-height: 70px;
+  }
+}

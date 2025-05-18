@@ -1,0 +1,14 @@
+[
+    {
+      "id": 1,
+      "src": "path/to/image1.jpg",
+      "title": "Stock 1",
+      "text": "Description of stock 1"
+    },
+    {
+      "id": 2,
+      "src": "path/to/image2.jpg",
+      "title": "Stock 2",
+      "text": "Description of stock 2"
+    }
+  ]

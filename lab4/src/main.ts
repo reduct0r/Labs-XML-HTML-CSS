@@ -1,26 +1,15 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-import { Request, Response, NextFunction } from 'express'; // Import Express types
+import { NestExpressApplication } from '@nestjs/platform-express';
+import { join } from 'path';
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
+  const app = await NestFactory.create<NestExpressApplication>(AppModule);
 
-  app.use((req: Request, res: Response, next: NextFunction) => {
-      res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:3000');
-      res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PATCH, DELETE');
-      res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-      if (req.method === 'OPTIONS') {
-        return res.status(200).send();
-      }
-      next();
-    });
+  const publicPath = join(process.cwd(), 'public');
+  console.log('Serving static files from:', publicPath);
+  app.useStaticAssets(publicPath);
 
-    app.enableCors({
-    origin: true,
-    methods: ['GET', 'POST', 'PATCH', 'DELETE'],
-    allowedHeaders: ['Content-Type'],
-  });
-
-  await app.listen(3000);
+  await app.listen(process.env.PORT ?? 3000);
 }
 bootstrap();

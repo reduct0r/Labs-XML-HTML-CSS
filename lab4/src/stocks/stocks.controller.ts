@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, Query } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, Query, HttpStatus } from '@nestjs/common';
 import { StocksService } from './stocks.service';
 import { CreateStockDto } from './dto/create-stock.dto';
 import { UpdateStockDto } from './dto/update-stock.dto';
@@ -27,7 +27,10 @@ export class StocksController {
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateStockDto: UpdateStockDto) {
     this.stocksService.update(+id, updateStockDto);
-    return { message: 'Stock updated successfully' };
+    return {
+      message: 'Stock updated successfully',
+      statusCode: HttpStatus.OK,
+    };
   }
 
   @Delete(':id')

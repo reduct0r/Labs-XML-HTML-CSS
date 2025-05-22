@@ -3,6 +3,7 @@ import { FileService } from '../file.service';
 import { Stock } from './entities/stock.entity';
 import { CreateStockDto } from './dto/create-stock.dto';
 import { UpdateStockDto } from './dto/update-stock.dto';
+import e from 'express';
 
 @Injectable()
 export class StocksService {
@@ -30,13 +31,14 @@ export class StocksService {
   }
 
   update(id: number, updateStockDto: UpdateStockDto): void {
-    const stocks = this.fileService.read();
-    const index = stocks.findIndex(stock => stock.id === id);
-    if (index !== -1) {
+      const stocks = this.fileService.read();
+      const index = stocks.findIndex(stock => stock.id === id);
+      if (index === -1) {
+        throw `Stock with id ${id} not found`;
+      }
       stocks[index] = { ...stocks[index], ...updateStockDto };
       this.fileService.write(stocks);
     }
-  }
 
   remove(id: number): void {
     const stocks = this.fileService.read();

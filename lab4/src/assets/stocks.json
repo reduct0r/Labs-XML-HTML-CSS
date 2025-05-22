@@ -1,14 +1,93 @@
 [
-    {
-      "id": 1,
-      "src": "path/to/image1.jpg",
-      "title": "Stock 1",
-      "text": "Description of stock 1"
-    },
-    {
-      "id": 2,
-      "src": "path/to/image2.jpg",
-      "title": "Stock 2",
-      "text": "Description of stock 2"
-    }
-  ]
+  {
+    "id": 1,
+    "src": "https://sun9-76.userapi.com/impg/70-cQHcew0dlhe67U9NPx_LIFfvxKJs6xOFp7Q/JavYIlBgkOA.jpg?size=1080x1080&quality=95&sign=efbcdcf6203837313b019d3e3063dc68&type=album",
+    "title": "Marci",
+    "text": "Отважная и неустрашимая спутница, мастерски владеющая рукопашным боем.",
+    "description": "Марси — преданная соратница героини Камиллы, известная своей невероятной выносливостью и скоростью. В бою она использует сочетание стремительных атак и точных блоков, обезоруживая противников и защищая своих союзников. Её ловкость и чувство ритма позволяют выстраивать смертельные комбинации ударов, а стойкость в схватке помогает выстоять даже против самых грозных врагов. ыва"
+  },
+  {
+    "id": 2,
+    "src": "https://i.ytimg.com/vi/bCzwkR9QCIQ/maxresdefault.jpg",
+    "title": "Shadow Fiend",
+    "text": "Демон Теней, пожирающий души павших и усиливающий свои атаки их энергией.",
+    "description": "Shadow Fiend — зловещий полубог, собирающий души побеждённых им врагов, чтобы возвратить их силу в своих разрушительных заклинаниях. Его умение «Shadowraze» испепеляет противников в радиусе удара, а массовые волны тьмы способны переломить ход любого сражения. Постоянный сбор духов даёт ему возможность наращивать силу и устрашать соперников своим демоническим обликом."
+  },
+  {
+    "id": 3,
+    "src": "https://vkplay.ru/pre_0x736_resize/hotbox/content_files/Stories/2023/07/03/39f6ab28f9d0461e9e5031e36437014b.jpg?quality=85",
+    "title": "Queen of Pain",
+    "text": "Коварная и изящная королева боли, молниеносно атакующая и исчезающая в тенях.",
+    "description": "Queen of Pain — владычица ночных кошмаров, чьи безжалостные крики «Scream of Pain» сковывают разум врагов, а «Blink» позволяет ей молниеносно менять позицию. Её способности наносят как физический, так и магический урон, а эффект затухания заставляет противников сомневаться в собственной безопасности. Она искусна в розыске целей и умеет безнаказанно выходить из самых опасных передряг."
+  },
+  {
+    "id": 4,
+    "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/axe.jpg",
+    "title": "Axe",
+    "text": "Неумолимый боец из племени Красных Топоров, владеющий невероятной силой и мастерством в ближнем бою.",
+    "description": "Axe бросается в гущу схватки и привлекает к себе внимание врагов, используя «Berserker’s Call». После чего он сотрясает землю могучими взмахами топора, нанося урон и прерывая вражеские способности. Его выносливость растёт с каждой полученной и отражённой атакой, что делает его живой стеной на передовой линии."
+  },
+  {
+    "id": 5,
+    "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/invoker.jpg",
+    "title": "Invoker",
+    "text": "Величайший заклинатель, владеющий арсеналом из десятка стихийных чар.",
+    "description": "Invoker сочетает три элементальных сфер: Quas (лед), Wex (молния) и Exort (огонь), чтобы создавать уникальные заклинания. Он способен контролировать поле боя при помощи «Tornado», «EMP» и «Sun Strike», а его «Chaos Meteor» сметает врагов огненным шаром. Мастерство в выборе сочетаний сфер делает его одним из самых гибких и опасных магов."
+  },
+  {
+    "id": 6,
+    "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/crystal_maiden.jpg",
+    "title": "Crystal Maiden",
+    "text": "Ледяная волшебница, подкрепляющая союзников морозной энергией.",
+    "description": "Crystal Maiden может замораживать врагов при помощи «Frostbite» и замедлять их движение «Crystal Nova», создавая контроль над полем боя. Её аура «Arcane Aura» восстанавливает ману командам на всю карту, что делает её бесценной на поздней стадии сражений. Хрупкая внешне, она компенсирует недостаток защиты мощной поддержкой."
+  },
+  {
+    "id": 7,
+    "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/pudge.jpg",
+    "title": "Pudge",
+    "text": "Жуткий мясник с оглушительным крюком и ядовитым дыханием.",
+    "description": "Pudge затягивает своих жертв в смертельный капкан «Meat Hook», затем наращивает урон чередой кровавых ударов «Rot». Его «Dismember» позволяет надолго обездвижить врага, превращая его в простую добычу. Он безжалостен в выслеживании одиночных целей и способен перевернуть исход дуэли."
+  },
+  {
+    "id": 8,
+    "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/phantom_assassin.jpg",
+    "title": "Phantom Assassin",
+    "text": "Скрытная убийца, наносит мгновенные смертельные удары из тени.",
+    "description": "Phantom Assassin полагается на «Stifling Dagger» для дистанционных атак и «Blur», чтобы уйти из-под прицела. Её «Phantom Strike» обеспечивает мгновенный телепорт к цели, а «Coup de Grace» дарит шанс нанести критический удар, разрывающий броню. Идеальна для внезапных вылазок и добивания ослабленных врагов."
+  },
+  {
+    "id": 9,
+    "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/lich.jpg",
+    "title": "Lich",
+    "text": "Холодный некромант, сковывающий врагов ледяными чарами и защищающий союзников щитом.",
+    "description": "Lich обмораживает противников «Frost Blast» и замедляет наступление льдом «Frost Shield», а его «Chain Frost» отсылает смертоносные сферы, рикошетящие между врагами. Он также может подарить союзникам дополнительную броню и скорость восстановления маны, жертвуя собственной жизненной энергией."
+  },
+  {
+    "id": 10,
+    "src": "https://i.ytimg.com/vi/Y14Ou1GYV9M/maxresdefault.jpg",
+    "title": "Tidehunter",
+    "text": "Безмолвный гигант из глубин моря, обрушивающий на врагов разрушительные волны.",
+    "description": "Tidehunter вызывает мощный прилив «Anchor Smash», уменьшая урон от атак противников и нанося им урон. Его ультимативная способность «Ravage» отправляет вокруг себя спирали океана, оглушая и замедляя всех врагов в большом радиусе, что делает его идеальным инициатором командных боёв."
+  },
+  {
+    "id": 11,
+    "src": "https://yandex-images.clstorage.net/5qAEs6079/921b80_WTD/EtKfIK9Bd8Km3VCqTEz7fZzebB13IfJhtzHRZt_GbhJEbmwVJx6bdT4u1l6G181jKfUzMNapFJxW4YZFKLN-lgWC2WzpC2-X8ZtO_kRP_n-Bgy8Ma3v2PK1zgmvewAd4Nhkeegx-61MSA59ejoqaIzC-JFa5ulbuJaD6SHS1H9I92b8os3wN2a_UHL55U-99qZlbK3Zl6xqJE7wDv7o9QRkvDXEpRdJaASOndpOnvAp5jwRTntZLxwWL-1ZemBLYHd6PNZBZOMqpyBykTEflfaGkSRB0QN8_hjCED6maDGI2DARfJ2LXTRgJl2iLjb4ZTZoVQafTdt41mcRHUoIP8j3yvQCSWSzWjMUtv1dmyXqIhE8_U2jjNLgTrjyugzx1BxwkQzBY-FYZN6hGq62oNFu0PE2k6GjFI7_ua1mEBckRyYcMhEsAxor8KqpkY9tJkqZ0NFBE6BG7JKEdor0ZYxMpLlYPQNp4CTquc7WCjRxxoClGqfdV-QyW22lftQTTB9qYNa1iLeKb1iuXVWH2Vqu_ZxJiQd8YnzaiI6qcG0Q0LhlMKmPAQDU8skaUhroQbIkYZ57QTdICu_h5fbET8R79niOuURr7luUrt0lA-UiUukcZcEnrNacSrT29vBNyHQs0XBdh8XYjKaBRjYGFOFWlEket4E_eConISUCrKOgy0KMItkQg5aTNHblgWPppkpRnCkRM7DSQJr8dqZoNUTkMLEA6belHHAmxTK-ilCN3rjZYns9E2Be13W1zmwXBKfWDJalbKeCU5SeVXFHcWo6RUQJRQNIWmBqAJ4aaGmw5FSZuK23XcjEPs02jnbM0SrkmY639QMMPu8hKXqgC5zXSvw2-dxzrpcYOq2hDxlaRqHYIWUzYNpI8ji-BpilzJS4XURZj0mQaAaNNmaCLPX2FP0KQ3kTcNLL1TXyUGcAOyY4Rjn4dzJHCLp9sT9ZwtZdxD3ZD0jS9BZk4g6k",
+    "title": "Shadow Shaman",
+    "text": "Мастер проклятий и тотемов, искусно управляющий разумом врагов.",
+    "description": "Shadow Shaman устанавливает «Serpent Wards», создающие невидимые охранные башни, и обрушивает на врагов «Hex», превращая их в беспомощных существ. Благодаря «Mass Serpent Ward» он может ломать башни и выдерживать натиск врагов, а сочетание контроля и урона делает его грозным магом поддержки."
+  },
+  {
+    "id": 12,
+    "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/sniper.jpg",
+    "title": "Sniper",
+    "text": "Виртуозный стрелок, поражающий цель с невероятной дистанции.",
+    "description": "Sniper пользуется «Assassinate», чтобы нанести точный выстрел издалека, и «Shrapnel», чтобы замедлять и ранить группы противников. Его «Headshot» даёт шанс сбить цель с ног, а «Take Aim» увеличивает дальность стрельбы, превращая его в идеального снайпера командных стычек."
+  },
+  {
+    "id": 13,
+    "src": "https://www.vikingdota.com/cdn/shop/products/dota2_0W8xaADspX_1024x.jpg?v=1639646151",
+    "title": "Drow Ranger",
+    "text": "Холодная элитная лучница, чьи стрелы замораживают и разрушают вражеские ряды.",
+    "description": "Drow Ranger владеет «Frost Arrows», наносящими дополнительный ледяной урон и замедление, а её «Gust» может откинуть назад толпу врагов. Её пассивная аура «Marksmanship» усиливает физический урон всех дальнобойщиков в команде, делая её незаменимым охотником на ключевые цели."
+  }
+]

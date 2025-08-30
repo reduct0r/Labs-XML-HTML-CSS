@@ -10,7 +10,7 @@ export class BackButtonComponent {
     getHTML() {
         return `
             <div style="display: flex; justify-content: center; margin-top: 20px;">
-                <button id="back-button" style="padding: 0.5rem 1rem; background-color: #FFA115; color: white; border: none; border-radius: 4px;">Назад</button>
+                <button id="back-button" style="padding: 0.5rem 1rem; background-color: #A91E22; color: white; border: none; border-radius: 0;">Назад</button>
             </div>
         `;
     }

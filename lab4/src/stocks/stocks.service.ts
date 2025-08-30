@@ -3,7 +3,6 @@ import { FileService } from '../file.service';
 import { Stock } from './entities/stock.entity';
 import { CreateStockDto } from './dto/create-stock.dto';
 import { UpdateStockDto } from './dto/update-stock.dto';
-import e from 'express';
 
 @Injectable()
 export class StocksService {
@@ -17,10 +16,16 @@ export class StocksService {
     this.fileService.write(stocks);
   }
 
-  findAll(title?: string): Stock[] {
-    const stocks = this.fileService.read();
+  findAll(title?: string, attribute?: string, complexity?: string): Stock[] {
+    let stocks = this.fileService.read();
     if (title) {
-      return stocks.filter(stock => stock.title.toLowerCase().includes(title.toLowerCase()));
+      stocks = stocks.filter(stock => stock.title.toLowerCase().includes(title.toLowerCase()));
+    }
+    if (attribute) {
+      stocks = stocks.filter(stock => stock.attribute === attribute);
+    }
+    if (complexity) {
+      stocks = stocks.filter(stock => stock.complexity === parseInt(complexity));
     }
     return stocks;
   }

@@ -6,30 +6,34 @@ export class ProductCardComponent {
     render(data, listener) {
         const html = this.getHTML(data);
         this.parent.insertAdjacentHTML("beforeend", html);
-        document.getElementById(`click-card-${data.id}`).addEventListener("click", listener);
+        document.getElementById(`card-${data.id}`).addEventListener("click", listener);
+    }
+
+    getAttributeColor(attribute) {
+        switch (attribute.toLowerCase()) {
+            case 'strength':
+                return '#C23C2A';
+            case 'agility':
+                return '#0DAB60';
+            case 'intelligence':
+                return '#37A1C3';
+            case 'universal':
+                return '#D1B109';
+            default:
+                return '#fff';
+        }
     }
 
     getHTML(data) {
+        const attrColor = this.getAttributeColor(data.attribute || 'universal');
         return `
-            <div class="card" style="width: 300px; background: #333; color: #fff;">
-                <img class="card-img-top" src="${data.src}" alt="картинка" style="object-fit: cover; height: 180px;"/>
-                <div class="card-body" style="display: flex; flex-direction: column; gap: 8px;">
-                    <h5 class="card-title" style="margin-bottom: 0; color: #fff;">${data.title}</h5>
-                    <p class="card-text" style="flex-grow: 1; font-size: 0.9rem; color: #ccc;">${data.text}</p>
-                    <button 
-                        id="click-card-${data.id}" 
-                        data-id="${data.id}"
-                        style="
-                            padding: 6px 14px;
-                            border: 1px solid #ccc;
-                            background-color: #fff;
-                            border-radius: 4px;
-                            cursor: pointer;
-                            transition: all 0.3s ease;
-                            color: #737373;
-                        " onmouseover="this.style.color='#FFA115'" onmouseout="this.style.color='#737373'">
-                        Открыть персонажа
-                    </button>
+            <div id="card-${data.id}" class="hero-card" data-id="${data.id}">
+                <img src="${data.src}" alt="${data.title}" style="width: 100%; height: auto;">
+                <div class="hero-overlay">
+                    <div class="hero-info">
+                        <div class="attribute-icon" style="background-color: ${attrColor};"></div>
+                        <span class="hero-name">${data.title}</span>
+                    </div>
                 </div>
             </div>
         `;

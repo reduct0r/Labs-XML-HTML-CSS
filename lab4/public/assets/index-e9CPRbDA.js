@@ -1,56 +1,46 @@
-import { stockUrls } from "../../modules/stockUrls.js";
-import { ajax } from "../../modules/ajax.js";
-import { ProductCardComponent } from "../../components/product-card/index.js";
-import { ProductPage } from "../product/index.js";
-
-
-export class MainPage {
-    constructor(parent) {
-        this.parent = parent;
-        this.query = "";
-        this.attribute = "";
-        this.complexity = "";
-    }
-
-    clickCard(e) {
-        const card = e.target.closest("[data-id]");
-        if (!card) return;
-
-        const cardId = card.dataset.id;
-        const productPage = new ProductPage(this.parent, cardId);
-        productPage.render();
-    }
-
-    async getData() {
-        let url = stockUrls.getStocks();
-        let params = [];
-        if (this.query.trim()) {
-            params.push(`title=${encodeURIComponent(this.query.trim())}`);
-        }
-        if (this.attribute) {
-            params.push(`attribute=${this.attribute}`);
-        }
-        if (this.complexity) {
-            params.push(`complexity=${this.complexity}`);
-        }
-        if (params.length > 0) {
-            url += `?${params.join('&')}`;
-        }
-
-        try {
-            const data = await ajax.get(url);
-            this.renderData(data || []);
-        } catch (error) {
-            console.error('Ошибка при получении данных:', error);
-        }
-    }
-
-    get pageRoot() {
-        return document.getElementById("main-page");
-    }
-
-    getHTML() {
-        return `
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const r of document.querySelectorAll('link[rel="modulepreload"]'))o(r);new MutationObserver(r=>{for(const i of r)if(i.type==="childList")for(const s of i.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&o(s)}).observe(document,{childList:!0,subtree:!0});function e(r){const i={};return r.integrity&&(i.integrity=r.integrity),r.referrerPolicy&&(i.referrerPolicy=r.referrerPolicy),r.crossOrigin==="use-credentials"?i.credentials="include":r.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function o(r){if(r.ep)return;r.ep=!0;const i=e(r);fetch(r.href,i)}})();class p{constructor(){this.baseUrl="http://localhost:3000"}getStocks(){return`${this.baseUrl}/stocks`}getStockById(t){return`${this.baseUrl}/stocks/${t}`}updateStockById(t){return`${this.baseUrl}/stocks/${t}`}}const a=new p;class m{async get(t){try{const e=await fetch(t);if(!e.ok)throw new Error(`HTTP error! status: ${e.status}`);return await e.json()}catch(e){throw console.error("Ошибка при выполнении GET-запроса:",e),e}}async patch(t,e){try{const o=await fetch(t,{method:"PATCH",headers:{"Content-Type":"application/json"},body:JSON.stringify(e)});if(!o.ok)throw new Error(`HTTP error! status: ${o.status}`);return await o.json()}catch(o){throw console.error("Ошибка при выполнении PATCH-запроса:",o),o}}}const c=new m;class u{constructor(t){this.parent=t}render(t,e){const o=this.getHTML(t);this.parent.insertAdjacentHTML("beforeend",o),document.getElementById(`card-${t.id}`).addEventListener("click",e)}getAttributeColor(t){switch(t.toLowerCase()){case"strength":return"#C23C2A";case"agility":return"#0DAB60";case"intelligence":return"#37A1C3";case"universal":return"#D1B109";default:return"#fff"}}getHTML(t){const e=this.getAttributeColor(t.attribute||"universal");return`
+            <div id="card-${t.id}" class="hero-card" data-id="${t.id}">
+                <img src="${t.src}" alt="${t.title}" style="width: 100%; height: auto;">
+                <div class="hero-overlay">
+                    <div class="hero-info">
+                        <div class="attribute-icon" style="background-color: ${e};"></div>
+                        <span class="hero-name">${t.title}</span>
+                    </div>
+                </div>
+            </div>
+        `}}class f{constructor(t){this.parent=t}getHTML(t){return`
+            <div style="max-width: 800px; margin: 2rem auto; padding: 2rem; border-radius: 0; box-shadow: 0 2px 12px rgba(0,0,0,0.2); background: #0a0e17; color: #fff;">
+                <img src="${t.src}" alt="icon" style="width: 100%; max-height: 300px; object-fit: cover; margin-bottom: 1.5rem;">
+                <h2 style="font-weight: 700; font-size: 2rem; color: #fff; margin-bottom: 1rem;">${t.title}</h2>
+                <p style="font-size: 1.1rem; color: #ccc; margin-bottom: 1.5rem;">${t.text}</p>
+                <div style="font-size: 1rem; line-height: 1.6; color: #ccc; margin-bottom: 2rem;">
+                    <strong style="color: #fff;">Описание персонажа:</strong>
+                    <p>${t.description||"Подробного описания пока нет."}</p>
+                </div>
+                <div style="margin-top: 2rem;">
+                    <h3 style="color: #fff; margin-bottom: 1rem;">Редактировать персонажа</h3>
+                    <form id="edit-form">
+                        <div style="margin-bottom: 1rem;">
+                            <label for="title-input" style="color: #ccc;">Имя:</label>
+                            <input type="text" id="title-input" value="${t.title}" style="width: 100%; padding: 0.5rem; background: #111; color: #fff; border: 1px solid #333; border-radius: 0;" />
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <label for="text-input" style="color: #ccc;">Краткое описание:</label>
+                            <input type="text" id="text-input" value="${t.text}" style="width: 100%; padding: 0.5rem; background: #111; color: #fff; border: 1px solid #333; border-radius: 0;" />
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <label for="description-input" style="color: #ccc;">Подробное описание:</label>
+                            <textarea id="description-input" style="width: 100%; height: 150px; padding: 0.5rem; background: #111; color: #fff; border: 1px solid #333; border-radius: 0;">${t.description||""}</textarea>
+                        </div>
+                        <button type="submit" style="padding: 0.5rem 1rem; background-color: #A91E22; color: white; border: none; border-radius: 0;">Сохранить</button>
+                    </form>
+                </div>
+            </div>
+        `}render(t){const e=this.getHTML(t);this.parent.insertAdjacentHTML("beforeend",e)}}class g{constructor(t){this.parent=t}addListeners(t){document.getElementById("back-button").addEventListener("click",t)}getHTML(){return`
+            <div style="display: flex; justify-content: center; margin-top: 20px;">
+                <button id="back-button" style="padding: 0.5rem 1rem; background-color: #A91E22; color: white; border: none; border-radius: 0;">Назад</button>
+            </div>
+        `}render(t){const e=this.getHTML();this.parent.insertAdjacentHTML("beforeend",e),this.addListeners(t)}}class h{constructor(t,e){this.parent=t,this.id=e}async getData(){try{const t=await c.get(a.getStockById(this.id));this.renderData(t)}catch(t){console.error("Ошибка при получении данных:",t)}}get pageRoot(){return document.getElementById("product-page")}getHTML(){return'<div id="product-page"></div>'}clickBack(){new d(this.parent).render()}renderData(t){new f(this.pageRoot).render(t),document.getElementById("edit-form").addEventListener("submit",async i=>{i.preventDefault();const s={title:document.getElementById("title-input").value,text:document.getElementById("text-input").value,description:document.getElementById("description-input").value};try{await c.patch(a.updateStockById(this.id),s),this.getData()}catch(l){console.error("Ошибка при обновлении данных:",l)}}),new g(this.pageRoot).render(this.clickBack.bind(this))}render(){this.parent.innerHTML="";const t=this.getHTML();this.parent.insertAdjacentHTML("beforeend",t),this.getData()}}class d{constructor(t){this.parent=t,this.query="",this.attribute="",this.complexity=""}clickCard(t){const e=t.target.closest("[data-id]");if(!e)return;const o=e.dataset.id;new h(this.parent,o).render()}async getData(){let t=a.getStocks(),e=[];this.query.trim()&&e.push(`title=${encodeURIComponent(this.query.trim())}`),this.attribute&&e.push(`attribute=${this.attribute}`),this.complexity&&e.push(`complexity=${this.complexity}`),e.length>0&&(t+=`?${e.join("&")}`);try{const o=await c.get(t);this.renderData(o||[])}catch(o){console.error("Ошибка при получении данных:",o)}}get pageRoot(){return document.getElementById("main-page")}getHTML(){return`
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap');
                 body {
@@ -208,53 +198,4 @@ export class MainPage {
             <footer style="background-color: #000; padding: 1rem; text-align: center; color: #ccc; margin-top: 2rem;">
                 <p>&copy; 2025 Valve Corporation. All rights reserved.</p>
             </footer>
-        `;
-    }
-
-    renderData(items) {
-        this.pageRoot.innerHTML = "";
-        items.forEach((item) => {
-            const card = new ProductCardComponent(this.pageRoot);
-            card.render(item, this.clickCard.bind(this));
-        });
-    }
-
-    addEventListeners() {
-        const searchInput = document.getElementById("search-input");
-
-        searchInput.addEventListener("input", () => {
-            this.query = searchInput.value;
-            this.getData();
-        });
-
-        // Attribute filters
-        const attrButtons = document.querySelectorAll('[id^="attr-"]');
-        attrButtons.forEach(btn => {
-            btn.addEventListener("click", () => {
-                attrButtons.forEach(b => b.classList.remove('selected'));
-                btn.classList.add('selected');
-                this.attribute = btn.id.replace('attr-', '') === 'all' ? '' : btn.id.replace('attr-', '');
-                this.getData();
-            });
-        });
-
-        // Complexity filters
-        const compButtons = document.querySelectorAll('[id^="comp-"]');
-        compButtons.forEach(btn => {
-            btn.addEventListener("click", () => {
-                compButtons.forEach(b => b.classList.remove('selected'));
-                btn.classList.add('selected');
-                this.complexity = btn.id.replace('comp-', '') === 'all' ? '' : btn.id.replace('comp-', '');
-                this.getData();
-            });
-        });
-    }
-
-    render() {
-        this.parent.innerHTML = "";
-        this.parent.insertAdjacentHTML("beforeend", this.getHTML());
-        this.addEventListeners();
-        this.getData();
-    }
-    
-}
+        `}renderData(t){this.pageRoot.innerHTML="",t.forEach(e=>{new u(this.pageRoot).render(e,this.clickCard.bind(this))})}addEventListeners(){const t=document.getElementById("search-input");t.addEventListener("input",()=>{this.query=t.value,this.getData()});const e=document.querySelectorAll('[id^="attr-"]');e.forEach(r=>{r.addEventListener("click",()=>{e.forEach(i=>i.classList.remove("selected")),r.classList.add("selected"),this.attribute=r.id.replace("attr-","")==="all"?"":r.id.replace("attr-",""),this.getData()})});const o=document.querySelectorAll('[id^="comp-"]');o.forEach(r=>{r.addEventListener("click",()=>{o.forEach(i=>i.classList.remove("selected")),r.classList.add("selected"),this.complexity=r.id.replace("comp-","")==="all"?"":r.id.replace("comp-",""),this.getData()})})}render(){this.parent.innerHTML="",this.parent.insertAdjacentHTML("beforeend",this.getHTML()),this.addEventListeners(),this.getData()}}const b=document.getElementById("root"),y=new d(b);y.render();

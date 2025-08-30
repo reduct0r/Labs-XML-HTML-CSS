@@ -1,4 +1,4 @@
-export class ProductCardComponent {
+export class CharacterCardComponent {
     constructor(parent) {
         this.parent = parent;
     }
@@ -24,14 +24,17 @@ export class ProductCardComponent {
         }
     }
 
+    getAttributeIcon(attribute) {
+        return `https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/icons/hero_${attribute.toLowerCase()}.png`;
+    }
+
     getHTML(data) {
-        const attrColor = this.getAttributeColor(data.attribute || 'universal');
         return `
             <div id="card-${data.id}" class="hero-card" data-id="${data.id}">
                 <img src="${data.src}" alt="${data.title}" style="width: 100%; height: auto;">
                 <div class="hero-overlay">
                     <div class="hero-info">
-                        <div class="attribute-icon" style="background-color: ${attrColor};"></div>
+                        <img class="attribute-icon" src="${this.getAttributeIcon(data.attribute || 'universal')}" style="width: 24px; height: 24px;">
                         <span class="hero-name">${data.title}</span>
                     </div>
                 </div>

@@ -19,8 +19,3 @@ async function bootstrap() {
   await app.listen(process.env.PORT ?? 3000);
 }
 bootstrap();
-
-const stockUrls = {
-    getStocks: () => 'http://localhost:3000/stocks',  // Укажи правильный порт, если сервер на другом
-    // Если нужны другие методы, добавь их здесь
-};

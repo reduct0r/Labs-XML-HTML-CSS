@@ -7,7 +7,7 @@ export class FileService<T> {
   private readonly filePath: string;
 
   constructor(filePath: string) {
-    this.filePath = path.resolve(__dirname, filePath);
+    this.filePath = "src/assets/stocks.json";
   }
 
   public read(): T {

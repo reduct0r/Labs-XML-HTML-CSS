@@ -1,7 +1,7 @@
-import { stockUrls } from "../../modules/stockUrls.js";
+import { stockUrls } from "../../modules/characterUrls.js";
 import { ajax } from "../../modules/ajax.js";
-import { ProductCardComponent } from "../../components/product-card/index.js";
-import { ProductPage } from "../product/index.js";
+import { CharacterCardComponent } from "../../components/character-card/index.js";
+import { CharacterPage } from "../character-view/index.js";
 
 
 export class MainPage {
@@ -17,7 +17,7 @@ export class MainPage {
         if (!card) return;
 
         const cardId = card.dataset.id;
-        const productPage = new ProductPage(this.parent, cardId);
+        const productPage = new CharacterPage(this.parent, cardId);
         productPage.render();
     }
 
@@ -123,14 +123,17 @@ export class MainPage {
                     width: 30px;
                     height: 30px;
                     border-radius: 50%;
-                    border: none;
+                    border: 1px solid gray;
                     cursor: pointer;
                     transition: transform 0.3s;
+                    background-color: transparent;
+                    background-size: cover;
+                    background-position: center;
                 }
                 .filter-btn.selected {
                     transform: scale(1.2);
                     border: 2px solid #fff;
-                }
+                }   
                 .comp-btn {
                     background-color: #fff;
                     color: #000;
@@ -172,11 +175,11 @@ export class MainPage {
                     <div style="display: flex; flex: 1; justify-content: center; align-items: center; gap: 2rem;">
                         <div style="display: flex; align-items: center; gap: 0.5rem;">
                             <span style="color: #fff; font-size: 1rem; font-family: 'Skranji', sans-serif;">Атрибут</span>
-                            <button id="attr-all" class="filter-btn" style="background-color: #ccc;"></button>
-                            <button id="attr-strength" class="filter-btn" style="background-color: #C23C2A;"></button>
-                            <button id="attr-agility" class="filter-btn" style="background-color: #0DAB60;"></button>
-                            <button id="attr-intelligence" class="filter-btn" style="background-color: #37A1C3;"></button>
-                            <button id="attr-universal" class="filter-btn" style="background-color: #D1B109;"></button>
+                            <button id="attr-all" class="filter-btn comp-btn" style="font-size: 0.8rem; background-color: #ccc; border-radius: 50%; width: 30px; height: 30px;">All</button>
+                            <button id="attr-strength" class="filter-btn" style="background-image: url('https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/icons/hero_strength.png');"></button>
+                            <button id="attr-agility" class="filter-btn" style="background-image: url('https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/icons/hero_agility.png');"></button>
+                            <button id="attr-intelligence" class="filter-btn" style="background-image: url('https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png');"></button>
+                            <button id="attr-universal" class="filter-btn" style="background-image: url('https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/icons/hero_universal.png');"></button>
                         </div>
                         <div style="display: flex; align-items: center; gap: 0.5rem;">
                             <span style="color: #fff; font-size: 1rem; font-family: 'Skranji', sans-serif;">Сложность</span>
@@ -214,7 +217,7 @@ export class MainPage {
     renderData(items) {
         this.pageRoot.innerHTML = "";
         items.forEach((item) => {
-            const card = new ProductCardComponent(this.pageRoot);
+            const card = new CharacterCardComponent(this.pageRoot);
             card.render(item, this.clickCard.bind(this));
         });
     }
@@ -237,6 +240,7 @@ export class MainPage {
                 this.getData();
             });
         });
+        document.getElementById('attr-all').classList.add('selected');
 
         // Complexity filters
         const compButtons = document.querySelectorAll('[id^="comp-"]');
@@ -248,6 +252,7 @@ export class MainPage {
                 this.getData();
             });
         });
+        document.getElementById('comp-all').classList.add('selected');
     }
 
     render() {

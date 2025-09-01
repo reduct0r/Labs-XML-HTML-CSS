@@ -1,0 +1,567 @@
+{
+  "attributes": [
+    {
+      "id": 1,
+      "name": "strength"
+    },
+    {
+      "id": 2,
+      "name": "agility"
+    },
+    {
+      "id": 3,
+      "name": "intelligence"
+    },
+    {
+      "id": 4,
+      "name": "universal"
+    }
+  ],
+  "complexities": [
+    {
+      "id": 1,
+      "level": 1
+    },
+    {
+      "id": 2,
+      "level": 2
+    },
+    {
+      "id": 3,
+      "level": 3
+    }
+  ],
+  "characters": [
+    {
+      "id": 1,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/marci.jpg",
+      "title": "Marci",
+      "text": "Отважная и неустрашимая спутница, мастерски владеющая рукопашным боем.",
+      "description": "Марси — преданная соратница героини Камиллы, известная своей невероятной выносливостью и скоростью. В бою она использует сочетание стремительных атак и точных блоков, обезоруживая противников и защищая своих союзников. Её ловкость и чувство ритма позволяют выстраивать смертельные комбинации ударов, а стойкость в схватке помогает выстоять даже против самых грозных врагов. ыва0000",
+      "attribute_id": 4,
+      "complexity_id": 2
+    },
+    {
+      "id": 2,
+      "src": "https://steamuserimages-a.akamaihd.net/ugc/1816638643699000210/0A642166DC1A55E6027726EB2F067CA0E661C2DE/?imw=512&imh=256&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+      "title": "Shadow Fiend",
+      "text": "Демон Теней, пожирающий души павших и усиливающий свои атаки их энергией.",
+      "description": "Shadow Fiend — зловещий полубог, собирающий души побеждённых им врагов, чтобы возвратить их силу в своих разрушительных заклинаниях. Его умение «Shadowraze» испепеляет противников в радиусе удара, а массовые волны тьмы способны переломить ход любого сражения. Постоянный сбор духов даёт ему возможность наращивать силу и устрашать соперников своим демоническим обликом.",
+      "attribute_id": 2,
+      "complexity_id": 2
+    },
+    {
+      "id": 3,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/qoparcana/qop_twitter238923.png",
+      "title": "Queen of Pain",
+      "text": "Коварная и изящная королева боли, молниеносно атакующая и исчезающая в тенях.",
+      "description": "Queen of Pain — владычица ночных кошмаров, чьи безжалостные крики «Scream of Pain» сковывают разум врагов, а «Blink» позволяет ей молниеносно менять позицию. Её способности наносят как физический, так и магический урон, а эффект затухания заставляет противников сомневаться в собственной безопасности. Она искусна в розыске целей и умеет безнаказанно выходить из самых опасных передряг.",
+      "attribute_id": 3,
+      "complexity_id": 2
+    },
+    {
+      "id": 4,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/axe.jpg",
+      "title": "Axe",
+      "text": "Неумолимый боец из племени Красных Топоров, владеющий невероятной силой и мастерством в ближнем бою.",
+      "description": "Axe бросается в гущу схватки и привлекает к себе внимание врагов, используя «Berserker’s Call». После чего он сотрясает землю могучими взмахами топора, нанося урон и прерывая вражеские способности. Его выносливость растёт с каждой полученной и отражённой атакой, что делает его живой стеной на передовой линии.",
+      "attribute_id": 1,
+      "complexity_id": 1
+    },
+    {
+      "id": 5,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/invoker.jpg",
+      "title": "Invoker",
+      "text": "Величайший заклинатель, владеющий арсеналом из десятка стихийных чар.",
+      "description": "Invoker сочетает три элементальных сфер: Quas (лед), Wex (молния) и Exort (огонь), чтобы создавать уникальные заклинания. Он способен контролировать поле боя при помощи «Tornado», «EMP» и «Sun Strike», а его «Chaos Meteor» сметает врагов огненным шаром. Мастерство в выборе сочетаний сфер делает его одним из самых гибких и опасных магов.",
+      "attribute_id": 3,
+      "complexity_id": 3
+    },
+    {
+      "id": 6,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/crystal_maiden.jpg",
+      "title": "Crystal Maiden",
+      "text": "Ледяная волшебница, подкрепляющая союзников морозной энергией.",
+      "description": "Crystal Maiden может замораживать врагов при помощи «Frostbite» и замедлять их движение «Crystal Nova», создавая контроль над полем боя. Её аура «Arcane Aura» восстанавливает ману командам на всю карту, что делает её бесценной на поздней стадии сражений. Хрупкая внешне, она компенсирует недостаток защиты мощной поддержкой.",
+      "attribute_id": 3,
+      "complexity_id": 1
+    },
+    {
+      "id": 7,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/pudge.jpg",
+      "title": "Pudge",
+      "text": "Жуткий мясник с оглушительным крюком и ядовитым дыханием.",
+      "description": "Pudge затягивает своих жертв в смертельный капкан «Meat Hook», затем наращивает урон чередой кровавых ударов «Rot». Его «Dismember» позволяет надолго обездвижить врага, превращая его в простую добычу. Он безжалостен в выслеживании одиночных целей и способен перевернуть исход дуэли.",
+      "attribute_id": 1,
+      "complexity_id": 2
+    },
+    {
+      "id": 8,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/phantom_assassin.jpg",
+      "title": "Phantom Assassin",
+      "text": "Скрытная убийца, наносит мгновенные смертельные удары из тени.",
+      "description": "Phantom Assassin полагается на «Stifling Dagger» для дистанционных атак и «Blur», чтобы уйти из-под прицела. Её «Phantom Strike» обеспечивает мгновенный телепорт к цели, а «Coup de Grace» дарит шанс нанести критический удар, разрывающий броню. Идеальна для внезапных вылазок и добивания ослабленных врагов.",
+      "attribute_id": 2,
+      "complexity_id": 1
+    },
+    {
+      "id": 9,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/lich.jpg",
+      "title": "Lich",
+      "text": "Холодный некромант, сковывающий врагов ледяными чарами и защищающий союзников щитом.",
+      "description": "Lich обмораживает противников «Frost Blast» и замедляет наступление льдом «Frost Shield», а его «Chain Frost» отсылает смертоносные сферы, рикошетящие между врагами. Он также может подарить союзникам дополнительную броню и скорость восстановления маны, жертвуя собственной жизненной энергией.",
+      "attribute_id": 3,
+      "complexity_id": 1
+    },
+    {
+      "id": 10,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/tidehunter.jpg",
+      "title": "Tidehunter",
+      "text": "Безмолвный гигант из глубин моря, обрушивающий на врагов разрушительные волны.",
+      "description": "Tidehunter вызывает мощный прилив «Anchor Smash», уменьшая урон от атак противников и нанося им урон. Его ультимативная способность «Ravage» отправляет вокруг себя спирали океана, оглушая и замедляя всех врагов в большом радиусе, что делает его идеальным инициатором командных боёв.",
+      "attribute_id": 1,
+      "complexity_id": 1
+    },
+    {
+      "id": 11,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/shadow_shaman.jpg",
+      "title": "Shadow Shaman",
+      "text": "Мастер проклятий и тотемов, искусно управляющий разумом врагов.",
+      "description": "Shadow Shaman устанавливает «Serpent Wards», создающие невидимые охранные башни, и обрушивает на врагов «Hex», превращая их в беспомощных существ. Благодаря «Mass Serpent Ward» он может ломать башни и выдерживать натиск врагов, а сочетание контроля и урона делает его грозным магом поддержки.",
+      "attribute_id": 3,
+      "complexity_id": 1
+    },
+    {
+      "id": 12,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/sniper.jpg",
+      "title": "Sniper",
+      "text": "Виртуозный стрелок, поражающий цель с невероятной дистанции.",
+      "description": "Sniper пользуется «Assassinate», чтобы нанести точный выстрел издалека, и «Shrapnel», чтобы замедлять и ранить группы противников. Его «Headshot» даёт шанс сбить цель с ног, а «Take Aim» увеличивает дальность стрельбы, превращая его в идеального снайпера командных стычек. 000 ,",
+      "attribute_id": 2,
+      "complexity_id": 1
+    },
+    {
+      "id": 13,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/drow_ranger.jpg",
+      "title": "Drow Ranger",
+      "text": "Холодная элитная лучница, чьи стрелы замораживают и разрушают вражеские ряды.",
+      "description": "Drow Ranger владеет «Frost Arrows», наносящими дополнительный ледяной урон и замедление, а её «Gust» может откинуть назад толпу врагов. Её пассивная аура «Marksmanship» усиливает физический урон всех дальнобойщиков в команде, делая её незаменимым охотником на ключевые цели.",
+      "attribute_id": 2,
+      "complexity_id": 1
+    },
+    {
+      "id": 14,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/abaddon.jpg",
+      "title": "Abaddon",
+      "text": "",
+      "description": "The Font of Avernus is the source of a family's strength, a crack in primal stones from which vapors of prophetic power have issued for generations. Each newborn of the cavernous House Avernus is bathed in the black mist, and by this baptism they are given an innate connection to the mystic energies of the land. They grow up believing themselves fierce protectors of their lineal traditions, the customs of the realm—but what they really are protecting is the Font itself. And the motives of the mist are unclear. When the infant Abaddon was bathed in the Font, they say something went awry. In the child's eyes there flared a light of comprehension that startled all present and set the sacerdotes to whispering. He was raised with every expectation of following the path all scions of Avernus took—to train in war, that in times of need he might lead the family's army in defense of the ancestral lands. But Abaddon was always one apart. Where others trained with weapons, he bent himself to meditation in the presence of the mist. He drank deep from the vapors that welled from the Font, learning to blend his spirit with the potency that flowed from far beneath the House; he became a creature of the black mist. There was bitterness within the House Avernus—elders and young alike accusing him of neglecting his responsibilities. But all such accusations stopped when Abaddon rode into battle, and they saw how the powers of the mist had given him mastery over life and death beyond those of any lord the House had ever known.",
+      "attribute_id": 4,
+      "complexity_id": 1
+    },
+    {
+      "id": 15,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/alchemist.jpg",
+      "title": "Alchemist",
+      "text": "",
+      "description": "The sacred science of Chymistry was a Darkbrew family tradition, but no Darkbrew had ever shown the kind of creativity, ambition, and recklessness of young Razzil. However, when adulthood came calling he pushed aside the family trade to try his hand at manufacturing gold through Alchemy. In an act of audacity befitting his reputation, Razzil announced he would transmute an entire mountain into gold. Following two decades of research and spending and preparation, he failed spectacularly, quickly finding himself imprisoned for the widespread destruction his experiment wrought. Yet Razzil was never one to take a setback lightly, and sought escape to continue his research. When his new cellmate turned out to be a fierce ogre, he found just the opportunity he needed. After convincing the ogre not to eat him, Razzil set about carefully concocting a tincture for it to drink, made from the moulds and mosses growing in the prison stone work. In a week's time, it seemed ready. When the ogre drank the potion, it flew into an unstoppable berserker rage, destroying the cell bars and exploding through walls and guards alike. They soon found themselves lost somewhere in the forest surrounding the city with a trail of wreckage in their wake and no signs of pursuit. In the tonic's afterglow, the ogre seemed serene, happy, and even eager. Resolving to work together, the pair set off to collect the materials needed to attempt Razzil's Alchemic transmutation once more.",
+      "attribute_id": 1,
+      "complexity_id": 1
+    },
+    {
+      "id": 16,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/ancient_apparition.jpg",
+      "title": "Ancient Apparition",
+      "text": "",
+      "description": "Kaldr, the Ancient Apparition, is an image projected from outside time. He springs from the cold, infinite void that both predates the universe and awaits its end. Kaldr is, Kaldr was, Kaldr shall be...and what we perceive, powerful as it appears to us, is but the faintest faded echo of the true, eternal Kaldr. Some believe that as the cosmos ages and approaches its final moments, the brightness and power of Kaldr will also intensify—that the Ancient Apparition will grow younger and stronger as eternity's end draws nigh. His grip of ice will bring all matter to a stop, his image will cast a light too terrible to behold. An Apparition no longer!",
+      "attribute_id": 3,
+      "complexity_id": 2
+    },
+    {
+      "id": 18,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/arc_warden.jpg",
+      "title": "Arc Warden",
+      "text": "",
+      "description": "Before the beginning of all, there existed a presence: a primordial mind, infinite, awesome, and set to inscrutable purpose. As the universe took shape, this mind was fragmented and scattered. Two among its greater fragments--who would come to be named Radiant and Dire--found themselves locked in vicious opposition, and began twisting all of creation to serve their conflict. As war and cataclysm threatened the nascent cosmos, the will of a third fragment made itself known. Naming itself Zet, this intellect sought to resolve the disharmony and return all to perfect unity. Appalled by its kin's conflicting nature, Zet gathered the sum of its power. In a sudden flash, it overwhelmed its siblings, and fused the warring aspects into a singular form--the Arc Warden. Within this entity, the still opposed fragments warred for dominance. Each time it manifests in the physical plane, one aspect always emerges victorious. In this eternal cycle, only Zet knows the day when its iterations will reconcile. When at last the schism ends, its halves will have played their game to the final move: the assimilation of all creation into unity.",
+      "attribute_id": 4,
+      "complexity_id": 3
+    },
+    {
+      "id": 19,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/bane.jpg",
+      "title": "Bane",
+      "text": "",
+      "description": "When the gods have nightmares, it is Bane Elemental who brings them. Also known as Atropos, Bane was born from the midnight terrors of the goddess Nyctasha. Queen of her kind, all Atropos are connected, but Bane is the first and most powerful. For centuries he has spread his terror, a torment that is inescapable. So much so that victims go mad from the fear. When they finally call upon their last thread of hope, Atropos is there. His presence fills the minds of his victims with madness, snuffing out their wicked dreams, and replacing them with visions of horror. He revels in their suffering, feeding off their fear, and his grip is unbreakable. None can wake from the nightmare he brings.",
+      "attribute_id": 4,
+      "complexity_id": 2
+    },
+    {
+      "id": 20,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/batrider.jpg",
+      "title": "Batrider",
+      "text": "",
+      "description": "There is no such thing as harmony among the creatures of the Yama Raskav Jungle. By bite, or claw, or pincer, or hoof, even the slightest sign of weakness means a swift death. They say the Rider was just a lad cutting chaff in his family's field when he discovered his calling. Perhaps it was the first time he worked beside his father and grandfather in the cycle that is planting and harvest. Huddled against the cold mist blowing in from the bay, no one thought to notice him missing as the day wore on. They found him the next morning wandering free, a perfect hole burned in his sleeve by a smothered lantern, a day's worth of stubble on his young chin. His eyes were glowing, murderous red. There had been no blood in the field, no sign of struggle, though the chaff was slickened and slicked to mud. His family buried the elders' ashes where they fell, and said little. Now the boy rides at the vanguard of nature's progress, spurring the endless jungle devouring tide onward with fire, paving the way for new settlement and new strife. He grins as he rides aloft his bat. Batrider knows. Harmony is boring.",
+      "attribute_id": 4,
+      "complexity_id": 2
+    },
+    {
+      "id": 21,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/beastmaster.jpg",
+      "title": "Beastmaster",
+      "text": "",
+      "description": "Karroch was born a child of the stocks. His mother died in childbirth; his father, a farrier for the Mad King Slom, was trampled to death when he was five. Afterward Karroch was bonded to the king's menagerie, where he grew up among all the beasts of the royal court: lions, apes, fell-deer, and things less known, things barely whispered of. When the lad was seven, an explorer brought in a beast like no other ever seen. Dragged before the King in chains, the beast spoke, though its mouth moved not. Its words: a plea for freedom. The King only laughed and ordered the beast perform for his amusement; and when it refused, Slom had it beaten, and ordered it to perform again. But the beast would not. So the boy spoke up for the beast, and asked the King what it would take to see the beast set free. The King laughed and said the beast would be freed, even pardoned, if the boy could make it perform three tasks. The boy smiled. So did the beast. Karroch succeeded in every challenge the King devised, and in the end he set the beast free. As the beast left, it spoke to Karroch, saying he had a good heart, and was worthy of the communion of beasts, and bestowed on him this gift: the strength of beasts would serve him if asked. Now grown, Karroch uses his gift to serve his people. He is called Beastmaster, and his strength defends the ancestral lands from all who would harm them.",
+      "attribute_id": 4,
+      "complexity_id": 2
+    },
+    {
+      "id": 22,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/bloodseeker.jpg",
+      "title": "Bloodseeker",
+      "text": "",
+      "description": "Straf runs through a valley, chased by a commotion of flapping. Barely conscious, he turns his head to see a swarm of plague bats flying behind him, their numbers multiplying by the second. He runs for cover in a cave, but the bats follow, and Straf is soon dead. The bats, fat on blood, head home to their master. Strygwyr the Bloodseeker licks his lips in anticipation.",
+      "attribute_id": 2,
+      "complexity_id": 1
+    },
+    {
+      "id": 23,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/bounty_hunter.jpg",
+      "title": "Bounty Hunter",
+      "text": "",
+      "description": "When the hunted tell tales of Gondar the Bounty Hunter, none are sure of which are true. In whispered tones they say he was abandoned as a kit, learning his skill in tracking as a matter of simple survival. Others hear he was an orphan of war, taken in by the great Soruq the Hunter to learn the master's skill with a blade as they plumbed the dark forests for big game. Still others believe he was a lowly street urchin raised among a guild of cutpurses and thieves, trained in the arts of stealth and misdirection. Around campfires in the wild countryside his quarry speaks the rumors of Gondar's work, growing ever more fearful: they say it was he who tracked down the tyrant King Goff years after the mad regent went into hiding, delivering his head and scepter as proof. That it was he who infiltrated the rebel camps at Wellisford, finally bringing the warlord Poor Yorick to ruin. That he stalked the cults of Daruun and survived their initiation rites, returning with their most sacred totems as his own. To Gondar, who has surpassed all the bounty hunters who trained him, it is no matter. A contract's promise is everything, and he always collects his due.",
+      "attribute_id": 2,
+      "complexity_id": 1
+    },
+    {
+      "id": 24,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/brewmaster.jpg",
+      "title": "Brewmaster",
+      "text": "",
+      "description": "Deep in the Wailing Mountains, in a valley beneath the Ruined City, the ancient Order of the Oyo has for centuries practiced its rites of holy reverie, communes with ancient spirits, and meditation on the meaning of existence. Founded on the precepts of purity, abstemiousness, and rejection of the external world in favor of inner tranquility, the monks of Oyo have long maintained an isolated existence, allowing into their numbers only those who have undergone the trials of initiation and indoctrination. But one among their number missed the true lesson, and that was Mangix. Already renowned in his youth as a champion of the keg and kanjar, Mangix's ready laughter and infamous drinking games had won him challenges against every komodo dragon within a hundred leagues. To no surprise but his own, he was admitted to the order--and he found in their cellars an elixir beyond compare. Now, with bottle in hand, he wades into battle, surprising friends and foes alike with his alacrity of spirit and ferocity of form. Though his true purposes lie shrouded in the dregs of his tankard, it is said of Mangix that none who meet him will forget the experience--though they may be too hungover to recall it.",
+      "attribute_id": 4,
+      "complexity_id": 3
+    },
+    {
+      "id": 25,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/bristleback.jpg",
+      "title": "Bristleback",
+      "text": "",
+      "description": "Never one to turn his back on a fight, Rigwarl was known for getting himself into trouble even before the war between the Sentinels and Scourge began. Chasing after a runaway drink tab, the Bristleback wandered into a fight with a bunch of gnolls who would have gladly killed him and left him for dead. But fueled by forgotten adrenaline, Rigwarl's spiny back repelled more and more of the attacks until none were left alive. Word spread quickly of the victor, and it wasn't long before everyone wanted a piece of him. He became a champion amongst the pubs and taverns, besting every would-be brawler and earning quite the reputation. No one had ever seen such relentless aggression, and his thick hide and spines turned away blows just as fast as he turned them on his enemies. But as his popularity increased, so did the pressure to win... and with a bottle or two drained, the odds turned out to be more and more grim. One day he awoke to find himself in the jail of Slom, awaiting execution for his losses. But the sacred blood of the Oglodi runs thick within Rigwarl's veins, and they never back down from a fight. Breaking out from his bonds, the Bristleback turned and headed for the exits, the bodies of guards cloven in two marking his escape. Now he fights for no one but himself, and he does it without fear of reprisal--for none are left alive to retaliate.",
+      "attribute_id": 1,
+      "complexity_id": 1
+    },
+    {
+      "id": 26,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/broodmother.jpg",
+      "title": "Broodmother",
+      "text": "",
+      "description": "For centuries, Black Arachnia the Broodmother lurked in the dark lava tubes beneath the smoldering caldera of Mount Pyrotheos, raising millions of spiderlings in safety before sending them to find new lands upon which to live. Vast webs of silken fibers encase her young, creating a vast lair from which only the strongest emerge. But her incubation takes a toll, and she must feed constantly to survive. When the First Mothers of her new hatchlings are ready to be laid, Black Arachnia burrows into a host, sucking it dry as her eggs mature. While she fears no enemy, her enemies fear little else more than stumbling into the lair of the Broodmother.",
+      "attribute_id": 2,
+      "complexity_id": 2
+    },
+    {
+      "id": 27,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/centaur.jpg",
+      "title": "Centaur Warrunner",
+      "text": "",
+      "description": "It's said that a centaur's road is paved with the corpses of the fallen. For the one called Warrunner, it has been a long road indeed. To outsiders, the four-legged clans of Druud are often mistaken for simple, brutish creatures. Their language has no written form; their culture lacks pictographic traditions, sculpted works, or music. Yet as any centaur might tell you, sheer animal strength and bestial fury are of little avail when outnumbered and out-planned. To a rugged people who exist in a world of constant danger, wisdom and careful strategy are prized far above any statue or symphony. The centaurs revere no gods of marble and gold, and no prophets guide their hooves. Instead, the omens of the stars, the bones, and the elders advise them as they carve their way through a hard life filled with arduous labors and deadly affrays. And of all living centaurs, it is said that Bradwarden is the greatest--and most dangerous--of them all. For among his people, there is a dangerous adage: 'Those who find victory live to tell the tales; the dead tell none'. And Bradwarden the Warrunner has never known defeat.",
+      "attribute_id": 1,
+      "complexity_id": 1
+    },
+    {
+      "id": 28,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/chaos_knight.jpg",
+      "title": "Chaos Knight",
+      "text": "",
+      "description": "The veteran of countless battles on a thousand worlds, Chaos Knight hails from a far upstream plane where the fundamental laws of the universe have found sentient expression. Of all the ancient Fundamentals, he is the oldest and most tireless—endlessly searching out a being he knows only as 'The Light'. Long ago the Light ventured out from the progenitor realm, in defiance of the first covenant. Now Chaos Knight shifts from plane to plane, always on the hunt to extinguish the Light wherever he finds it. A thousand times he has snuffed out the source, and always he rides on—driven ever forward by the inscrutable urge of the Fundamental.",
+      "attribute_id": 1,
+      "complexity_id": 1
+    },
+    {
+      "id": 29,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/chen.jpg",
+      "title": "Chen",
+      "text": "",
+      "description": "Born in the godless Hazhadal Barrens, Chen came of age among the outlaw tribes who eked out an existence in the shimmering heat of the desert. Using an ancient form of animal enthrallment, Chen's people husbanded the hardy desert locuthi, a stunted species of burrowing dragon that melted desert sands into tubes of glass where their young could hatch away from predators. Chen's clan was scattered when the beastmen of King Leith sacked their camp, but one of his dragons survived in the desert and found him half-dead of thirst and exposure. The creature protected Chen while he tried to heal, but when the first beastmen shocktroopers came scouting, Chen had no choice but to use his clan's forbidden rite to enlist the beast's help. Riding the dragon into combat, he crushed the scouts and saved the creature from being returned to the dragon-sand farms. Now Chen rides not one beast, but many. With these strange companions in thrall, the Beastmaster wreaks havoc upon all who stand foolish enough to stand against him.",
+      "attribute_id": 3,
+      "complexity_id": 3
+    },
+    {
+      "id": 30,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/clinkz.jpg",
+      "title": "Clinkz",
+      "text": "",
+      "description": "At the base of the Bleeding Hills stretches a thousand-league wood—a place called The Hoven, where even the staunchest hearts must struggle to abide. There, amidst the trees' twisted boughs and dry decay, the living dead endure. But the old king was vain, and when he was slain, his vanity and his will endured within his body. It was this will that attached itself to the first suitable creature to happen by—a creature called Clinkz. The old king's desires burn in Clinkz's unbeating heart, driving him to defend the Hoven, burning foes to dust with his hellfire arrows.",
+      "attribute_id": 2,
+      "complexity_id": 2
+    },
+    {
+      "id": 31,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/rattletrap.jpg",
+      "title": "Clockwerk",
+      "text": "",
+      "description": "Rattletrap descends from the same far-flung kindred as Sniper and Tinker, and like many of the Keen Folk, he also desires to acquire the ultimate technology, be it mechanical or magickal. He has made a study of this world, and has devised his own form of mystical clockwork. Traps and explosives are his expertise, and despite their small payloads, in large enough quantities they can carpet any killing field with enough destruction to put down the toughest warrior.",
+      "attribute_id": 1,
+      "complexity_id": 2
+    },
+    {
+      "id": 32,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/dark_seer.jpg",
+      "title": "Dark Seer",
+      "text": "",
+      "description": "Fast when he needs to be, and a cunning strategist, Ish'Kafel the Dark Seer requires no edged weapons to vanquish his enemies, relying instead on the strength of his powerful mind. His unconventional outlook is brilliant despite his insanity, and the Dark Seer wins his battles through manipulation and guile. He is ever seeking knowledge through the unseen forces of the universe, using the limitless power of his mind to wield volatile energy from another plane. He is a powerful ally to those who are not beneath him.",
+      "attribute_id": 3,
+      "complexity_id": 1
+    },
+    {
+      "id": 33,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/dark_willow.jpg",
+      "title": "Dark Willow",
+      "text": "",
+      "description": "Children love telling stories about the whimsical adventures of fairies. That's because children don't know that most fairies are spiteful bastards. Let me tell you something about fairies. Actually, nah. You don't wanna know what fairies are really like. You'll just have to take my word for it. They're vicious. They love a good prank. They love a bad prank even more. And Mireska? She's always loved a good prank. As the first born daughter of a king, she never really embraced the whole 'princess' thing. Too many rules. Too much kissing up to her father. Mireska ran away from home when she was very small, and has been causing trouble ever since. She's as elusive as she is mean. And let me tell you, she's very, very mean. She's also very, very tiny. But don't let that fool you. Fairies are small, but they're also terrifying. They have all kinds of weird powers. They can turn invisible. They can make you fall asleep. They can summon impenetrable thickets out of nowhere. And if they're mad? They can summon fire or lightning or explosions or worse. And Mireska is always mad about something. So next time you're walking through the woods and you get the feeling you're being watched? Run. Run fast. Because it's probably Mireska, and she's probably about to play a prank on you. And it's probably going to be a bad one.",
+      "attribute_id": 3,
+      "complexity_id": 2
+    },
+    {
+      "id": 34,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/dawnbreaker.jpg",
+      "title": "Dawnbreaker",
+      "text": "",
+      "description": "From her celestial forge Valora strikes forth a peerless exemplar of fortitude and heart. If a world is to endure, it needs those who will stand unyielding against the darkness - a dawning light to rally the worthy and steel the resolve. But to inspire the great, one must save the small. For even a single voice can stir the hearts of millions. Even a single light can break the darkest night.",
+      "attribute_id": 1,
+      "complexity_id": 1
+    },
+    {
+      "id": 35,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/dazzle.jpg",
+      "title": "Dazzle",
+      "text": "",
+      "description": "Each young acolyte to the Dezun order must undertake the trials of the Nothl Realm, a spiritual plane beyond the relative safety of the material world. There, one's faith is tested by malign forces seeking to corrupt and convert. Those who emerge pure of heart are allowed to take the mantle of holy leadership in the order. But of the countless youths who have left to commune with their gods, few have returned. Dazzle was the youngest of his tribe ever to request the sacred ritual. At first the order's elders refused him, saying he was too small, too frail. But when the child let out a guttural cry from his thin lips, they heard within his voice a thousand years of Nothl supplications. The elders relented, and the boy was sent forth, armed with nothing but his will and his faith. As the weeks became months, the order despaired of ever seeing the child again. But one night, a new star appeared in the sky above the Nothl shrine. Those below stared in awe as the star grew brighter, closer, until it burst forth with light - the light of Dazzle, returning from his otherworldly sojourn. They could see at once that he had not only survived his trial, but he had been blessed by the same shadowy powers he sought to command. Now, with strange new weapons at his disposal, he brings his tribe victory after victory in honor of the shadowy gods that he serves.",
+      "attribute_id": 4,
+      "complexity_id": 1
+    },
+    {
+      "id": 36,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/death_prophet.jpg",
+      "title": "Death Prophet",
+      "text": "",
+      "description": "Krobelus was a Death Prophet—which is one way of saying she told fortunes for the wealthiest of those who needed to know what the future might bring. But her gift—or curse—went far beyond that. For Krobelus dealt not in futures, but in the future dead. She could summon the names of those whose hourglasses had run out, and for a price she would share those names. But as her powers grew, she found the knowledge of a person's death to be only half of the story. The shades of the soon-to-be-deceased began to visit her. At first she thought them mere hallucinations, but soon she realized they were the spirits of those not yet dead, but whose deaths were fast approaching. The spirits begged her to spare them, to send their names back to the realm of the dead. But Krobelus refused. Instead, she enslaved the spirits, forcing them to serve her in this world and the next. Now, with an army of the undead at her command, she is the Death Prophet, a commander of the dead who walks among the living.",
+      "attribute_id": 4,
+      "complexity_id": 1
+    },
+    {
+      "id": 37,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/disruptor.jpg",
+      "title": "Disruptor",
+      "text": "",
+      "description": "High on the wind-ravaged steppes of Druud, a gifted young stormcrafter called Disruptor was the first to unlock the secrets of the summer squalls. Constantly under assault from both seasonal storms and encroachment from civilized kingdoms to the south, the upland Oglodi have for centuries sought to expand their dominion. Most attempts fail—despite their strength and fighting skill, the warriors of Druud are often outnumbered and outclassed. But Disruptor, riding the storm, could single-handedly reverse the tides of battle. His profound insight into stormcraft lets him manipulate the elements to stunning effect. Centered on his position, a ring of kinetic energy encircles him at all times, a power waiting to be released. When he casts his gaze to the sky, roiling thunderheads form where there were once only clouds. With a gesture, he calls down a strike from the heart of the storm, blasting and stunning enemies below. But these are mere demonstrations. When the need arises, Disruptor unleashes his true power. Opening a rift to the heart of the tempest, he traps enemies in a raging cyclone, sucking all sound from the area and muting those affected. Or he can call down a meteor shower, wreaking devastation on a broad swath of terrain. But his greatest weapon is reserved for the most dire circumstances. With eyes on the horizon, he can manifest an apocalyptic storm of lightning, thunder, and gale-force winds— a tempest so powerful it can scour the earth clean and blow away entire regiments.",
+      "attribute_id": 3,
+      "complexity_id": 2
+    },
+    {
+      "id": 38,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/doom_bringer.jpg",
+      "title": "Doom",
+      "text": "",
+      "description": "He who was one with the spirit of this earth has now merged with a being from the heavens. His presence is felt not only by the hearts of men, but also by the very fibers of this world. This cataclysmic union has caused his rage to burn within him like a million suns exploding in the night sky. Those who face his wrath will feel the earth tremble beneath them. The doom of all lies within this one creature. For this is the final prophet of the apocalypse, the last harbinger of the end times. He is the Alpha and Omega, the beginning... and the end.",
+      "attribute_id": 1,
+      "complexity_id": 2
+    },
+    {
+      "id": 39,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/dragon_knight.jpg",
+      "title": "Dragon Knight",
+      "text": "",
+      "description": "After years on the trail of a legendary Eldwurm, the Knight Davion found himself facing a disappointing foe: the dreaded Slyrak had grown ancient and frail, its wings tattered, its few remaining scales stricken with scale-rot, its fangs blunted and its fire-gouts no more than a puff of smoke. The Knight Davion prepared to slay the dragon, but Slyrak, sensing the knight's nobility, stayed his hand. The dragon quietly slipped his mortal coil, leaving Davion with the dragon's blood on his hands. The blood mingled with Davion's own, and Slyrak's draconic essence was reborn as a man. Now the knight lives on in dragon form, his bescaled form infused with the Eldwurm's ancient power: the regenerative flame of rebirth, the scorching blast of fire, and the armor-hard scales of all dragons since the beginning. Half-man, half-dragon, he is whole in his purpose: to scour the world of evil. Though many have tried to slay him, few have succeeded—for he is no vulnerable worm, but a wyrm reborn, the great Eldwurm Slyrak, with the knowledge of the ages in his soul, and a fury for battle that few can match.",
+      "attribute_id": 1,
+      "complexity_id": 1
+    },
+    {
+      "id": 40,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/earth_spirit.jpg",
+      "title": "Earth Spirit",
+      "text": "",
+      "description": "Deep below the surface of the world lay untold riches. Miners would have dreamed of these, had they known of their existence, yet they were never meant for mortal hands. No, the veins of jade were the lifeblood of the world, and within them stirred ancient, nameless things that had been old when the first men crawled from the ooze. Among them was one who was called Kaolin. He had slumbered there since time immemorial, but now he stirred once more. The world above had changed, and even the earth had shifted. No longer content to wait, Kaolin has come to the surface to test his strength against the new world, and to carve his will into the very stones of the earth.",
+      "attribute_id": 1,
+      "complexity_id": 3
+    },
+    {
+      "id": 41,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/earthshaker.jpg",
+      "title": "Earthshaker",
+      "text": "",
+      "description": "Like a golem or gargoyle, Earthshaker was one with the earth but now walks freely upon it. Unlike those who serve the earth, he places himself at the service of others. Yet he is not a servant, for he knows his own worth. He is a master shaper of the earth's strength, calling forth fissures and upheavals as he sees fit. He is no carver of intricate things, but a blacksmith, hammering the anvil of the world into a weapon of his choosing. He is Earthshaker, and the earth trembles at his call.",
+      "attribute_id": 1,
+      "complexity_id": 2
+    },
+    {
+      "id": 42,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/elder_titan.jpg",
+      "title": "Elder Titan",
+      "text": "",
+      "description": "Perhaps among the greatest warriors to ever live, Elder Titan has spanned myriad ages and battled in countless wars. He has seen empires rise and fall, witnessed the birth of stars, and mourned as they collapsed into black holes. He has commanded armies on the fields of battle, and been the instrument of their destruction. He is a being who knows power in its purest form, a veteran of ten thousand battles, a witness to the unmaking of worlds. He is Elder Titan, and he brings the fury of creation and destruction to the enemies of the ancients.",
+      "attribute_id": 1,
+      "complexity_id": 2
+    },
+    {
+      "id": 43,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/ember_spirit.jpg",
+      "title": "Ember Spirit",
+      "text": "",
+      "description": "Lost within the Wailing Mountains, the Fortress of Flares lay abandoned, its training halls empty, its courtyard covered in leaves and dust. Upon a pilgrim's approach, the ancient gates creaked open, and the pilgrim was met by a gust of hot wind as the ancient furnace inside reignited, its embers stirring to illuminate a lone figure seated in meditation. For nine years Xin had sat absorbing the teachings etched into the walls. Now it was his turn to carry them into battle. With but a word, he ignited the ancient forges, and from the fires sprang forth the elemental guards, ready to obey his command. With a gesture, he kindled the embers within himself, and in a burst of flame, he was gone, leaving behind only the echo of his voice: 'I am a beacon of knowledge blazed out across the black sea of ignorance.'",
+      "attribute_id": 2,
+      "complexity_id": 2
+    },
+    {
+      "id": 44,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/enchantress.jpg",
+      "title": "Enchantress",
+      "text": "",
+      "description": "Aiushtha appears to be an innocent, carefree creature of the woods, and while this is certainly true, it is hardly the sum of her story. She well understands the suffering of the natural world. She has wandered far, and fared through forests bright and drear, in every clime and every season, gathering friends, sharing news, bringing laughter and healing wherever she goes. For in worlds wracked by war, forests are leveled for the building of ships and siege engines; and even in places of peace, the woods are stripped for the building of homes, and the trees are forgotten. So to wander as she does is to hear the stories of the creatures therein, and she is always willing to walk a little further if only to heal a splintered sapling or restore life to an ailing limb. The creatures she meets along her journeys are often skeptical of her at first; her guidance and good counsel misinterpreted as hostile prodding, but she takes it in stride, and moves on. In time, they come to respect her, joining her beneath the boughs to listen to her songs and learn from her wisdom. And so she moves ever onward, in search of those who need her help.",
+      "attribute_id": 3,
+      "complexity_id": 2
+    },
+    {
+      "id": 45,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/enigma.jpg",
+      "title": "Enigma",
+      "text": "",
+      "description": "Nothing is known of Enigma's background. There are only stories and legends, most of them apocryphal, passed down through the ages. In truth, Enigma is a mystery for whom the only true biography is description: he is a universal force, a consumer of worlds. He is a being of the void, at times corporeal, other times ethereal. A beast between the planes. There are stories of the things that happen where the nature of Enigma walks. Stories of entire cities that disappeared overnight, of giant waves that rose from nowhere and swallowed ships whole, of volcanoes that erupted in an instant, burying all in molten rock. There are stories of a great chasm that opened in the earth, and from it emerged a terrible darkness that consumed all it touched. There are stories of a great light that descended from the heavens, and from it emerged a glorious being of pure energy that blessed all it touched. But all these stories are the same story, for Enigma is all these things and none of them. He is the end and the beginning, the question and the answer, the unknowable, the incomprehensible. He is Enigma.",
+      "attribute_id": 4,
+      "complexity_id": 2
+    },
+    {
+      "id": 46,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/faceless_void.jpg",
+      "title": "Faceless Void",
+      "text": "",
+      "description": "Darkterror the Faceless Void is a visitor from Claszureme, a realm outside of time. It remains a mystery why this being from another dimension believes the struggle for the Nemesis Stones is worth entering our physical plane, but apparently an upset in the balance of power in this realm has repercussions in adjacent dimensions. Time means nothing to Darkterror, except as a way to thwart his foes and aid his allies. His long-view of the cosmos has given him a remote, disconnected quality, although in battle he is quite capable of making it personal.",
+      "attribute_id": 2,
+      "complexity_id": 2
+    },
+    {
+      "id": 47,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/grimstroke.jpg",
+      "title": "Grimstroke",
+      "text": "",
+      "description": "The people of Ashkavor crowded the plaza square, gathered to hear their king's declaration of war against the Ancient known as Slee'aul. The Ashkavorians were a trading people, builders and thinkers who revered their elders and cherished peace above all things. But their elders had been slain by Slee'aul's disciples, and their children had been sacrificed on the altar of the zealots. The Ashkavorians had no choice but to fight. The king raised his scepter, ready to give the call to arms. But as he spoke, his voice failed. His mouth gasped for air that would not come. The scepter fell from his hands as his body withered, aging decades in moments. The square erupted in panic as the king's closest guards turned to dust, their armor and weapons falling to the ground. From the parapets emerged a figure draped in black, his brush dripping with ink. He needed no words to declare his verdict. The Ashkavorians had been judged, and the sentence was death. The figure in black vanished, leaving the people to scramble for the exits, trampling one another in their desperation. But there was no escape. The city's gates had been sealed by some dark magic, and the people were trapped within. The figure in black reappeared throughout the city, his brush strokes marking the doors of the guilty. Those within were doomed to die, their life force drained away until only desiccated husks remained. When the last Ashkavorian fell, the figure in black surveyed his work. The city was silent, its people gone. He dipped his brush into his inkwell and vanished once more, off to judge another civilization. For Grimstroke is the arbiter of fate, and he demands perfection.",
+      "attribute_id": 3,
+      "complexity_id": 2
+    },
+    {
+      "id": 48,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/gyrocopter.jpg",
+      "title": "Gyrocopter",
+      "text": "",
+      "description": "After three lives of endless piloting and study, Aurel had concluded that time was not an enemy to be beaten, but a lover to be wooed. With a brain the size of a B'rscon's, he had seen more of the world than most would in a thousand lifetimes, and yet it was only when he retired to the tropical climes of Paradise that he found what he had always wanted: a place to call home. But now Paradise was threatened by invading marauders, and though his neighbors called for evacuation, Aurel knew that the time had come to take to the skies once more. With grim resolve he climbed into the cockpit of his Gyrocopter, its rotors kicking up a torrent of sand as he roared into the sky to meet the invaders head on. 'Time waits for no man,' he thought. 'But war... war dances to my tune.'",
+      "attribute_id": 2,
+      "complexity_id": 1
+    },
+    {
+      "id": 49,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/hoodwink.jpg",
+      "title": "Hoodwink",
+      "text": "",
+      "description": "Hoodwink's earliest years were spent in the idyllic expanse of green that once filled the edges of Krimwohl. But as that kingdom grew, and the needs of her people with it, so too did their lumbering encroachment into the old growth of the forest. With every felled tree, it seemed the angry nymphs of the wilder, deeper woods crept closer. Closer, until they were upon the thatched rooftops of the villages, their thorned fingers reaching through the shadows for the babes swaddled within. Taken in the night by some vile thing of dark root and leaf, Hoodwink's sister was the first of the village children to vanish. She would not be the last. Yet it was not until her own closest kin were taken that the rest of the kingdom took notice of their plight. Soldiers were sent, traps were set, and bounties of gold were offered to any hunter who could kill the beasts. None succeeded. For gold was no motivation to hunters who had known the true bounty of the woods. The bounty taken from them by an ever encroaching Krimwohl. And so as her neighbors hid with rifle and bow, waiting for aid that would never come, Hoodwink felt she had no choice but to venture into the dark of the woods, her untempered anger her only guide. None know what happened beneath those boughs - only that the beasts were repelled, and a sense of equilibrium returned to the wilds for a time. But the girl who went into the woods was not the same who emerged. And when the soldiers of Krimwohl stood at the edge of the woods once more, axes in hand, Hoodwink turned her rifle and her quiver on them. For she would defend her home as fiercely as the beasts had defended theirs. And who but Hoodwink could say which creatures were truly the more civilized?",
+      "attribute_id": 2,
+      "complexity_id": 2
+    },
+    {
+      "id": 50,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/huskar.jpg",
+      "title": "Huskar",
+      "text": "",
+      "description": "Emerging from the throes of the sacred Nothl ritual, Huskar opened his eyes to see the shaman Dazzle channeling death magic upon him. Against the ancient rites the elders used to ensure the success of the Nothl trial, Dazzle had brought Huskar back from the brink of death. The elders, enraged at the young acolyte for his blasphemy, sought to sacrifice him to appease the spirits. But the next morning Dazzle was found dead in his hut, his body shredded as if clawed by a beast. Hearing of this terrifying manifestation, the elders' fear of the spirits turned to reverence. They believed that the beasts of the jungle had risen to protect Huskar, and so they elevated him to a place of honor, and trained him as a warrior to lead their armies. But the power that had preserved him was not of the beasts, but burning within his own fury. A power that would prove far greater--and far more dangerous--than anything the elders could have imagined.",
+      "attribute_id": 1,
+      "complexity_id": 1
+    },
+    {
+      "id": 52,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/wisp.jpg",
+      "title": "Io",
+      "text": "",
+      "description": "Io is everywhere, and in all things. Denounced by enemies as the great unmaker, worshiped by scholars as the twinkling of a divine eye, Io occupies all planes at once, the merest fraction of its being crossing into physical existence at any one moment. Like the great twin riders Dark and Light, and yet another ancient traveler whose true history is lost to the ages, Io the wisp travels the ethereal plane, seeking to manifest itself in our world. Those who encounter Io find it a baffling, enigmatic creature, but all agree its power is real, and its motives are inscrutable.",
+      "attribute_id": 4,
+      "complexity_id": 3
+    },
+    {
+      "id": 53,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/jakiro.jpg",
+      "title": "Jakiro",
+      "text": "",
+      "description": "Even among magical beasts, a twinheaded dragon is a freak. Equal parts ice and fire, cunning and rage, the creature known as Jakiro glides over charred and ice-bound battlefields, laying waste to all who would stand in his way. Hatched on a wind-scoured peak during a storm of unusual magick, his egg was forever altered by the tempest's wrath. The first crack of the shell released a gust of flame that scorched the nest. The second birthed a gust of wind that scattered the ashes. When the wyrmling finally emerged, he came forth not as one, but two—fused together by the storm's wrath, sharing one body but not one mind. Though they constantly bicker, the brothers have learned to work together, combining their elements to produce effects neither could achieve alone. Jakiro is a creature divided against itself, and the skies rumble with his incessant bickering.",
+      "attribute_id": 3,
+      "complexity_id": 1
+    },
+    {
+      "id": 54,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/juggernaut.jpg",
+      "title": "Juggernaut",
+      "text": "",
+      "description": "No one has ever seen the face hidden beneath the mask of Yurnero the Juggernaut. It is only speculation that he even has one. For defying a corrupt lord, Yurnero was exiled from the ancient Isle of Masks--a punishment that saved his life. The isle soon after vanished beneath the waves in a night of vengeful magic. He alone remains to carry on the Isle's long Juggernaut tradition, one of ritual and swordplay. The last practitioner of the art, Yurnero's confidence and courage are the result of endless practice; his inventive blade techniques prove that he has never stopped challenging himself. Still, his motives are as unreadable as his expression. For a hero who has lost everything twice over, he fights as if victory is a foregone conclusion.",
+      "attribute_id": 2,
+      "complexity_id": 1
+    },
+    {
+      "id": 55,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/keeper_of_the_light.jpg",
+      "title": "Keeper of the Light",
+      "text": "",
+      "description": "Upon a pale horse he rides, this spark of endless suns, this Keeper of the Light. Ezalor long ago escaped the Fundamental plane, separating from the other ancient forces to which he was bound within the great Primordial harmony. He is a power grown beyond the sway of time or space, part of his mind anchored eternally in the vortex of infinite realities. He chooses now which laws to follow, which masters to obey, which followers to lead. And his choice now is to ignite the spark of sentience in all the multiverse, to churn the monodimensional sludge of chaos into a slurry of being and not-being, and winnow from it the ambulatory motes of life and potential. And if a few must be sacrificed along the way to fuel the radiance of creation--so be it. For Ezalor carries his luminance through the farthest corners of the planes, and where he travels, all manner of potential and perception, volition and whim follow in his wake.",
+      "attribute_id": 3,
+      "complexity_id": 2
+    },
+    {
+      "id": 56,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/kunkka.jpg",
+      "title": "Kunkka",
+      "text": "",
+      "description": "As The Admiral of the mighty Claddish Navy, Kunkka was charged with protecting the isles of his homeland when the demons of the Cataract made a concerted grab at the lands of men. After years of small sorties, and increasingly bold and devastating attacks, the demon fleet threw all its carnivorous might at the Trembling Isle. Desperate, the Suicide-Mages of Cladd committed their ultimate rite, summoning a host of ancestral spirits to protect the fleet. Against the demons, this was just barely enough to turn the tide. As Kunkka watched the demons take his ships down one by one, he had the satisfaction of wearing away their fleet with his ancestral magic. But at the end of the day, it was still their flagship over his. As the illusion faded, Kunkka found his blade brought to the throat of the demons' admiral, who croaked a final cursed oath: The ocean shall have you now. The Admiral did not wait to see what came next, abandoning his crew and swimming for the nearest shore. No one knows what happened to the ship, or the crew, or the ancestral spirits. But some say on foggy nights the sound of crashing waves can be heard against the hulls of ghost ships on the Trembling Isle, and the gulls that circle above cry out Yo ho ho!. But Kunkka does not care. He has a score to settle, and he intends to find that demon admiral and collect.",
+      "attribute_id": 1,
+      "complexity_id": 2
+    },
+    {
+      "id": 57,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/legion_commander.jpg",
+      "title": "Legion Commander",
+      "text": "",
+      "description": "They came without warning. Within the city walls of Stonehall there came a rumble and a terrible sound, and from blackness unknown came a force of beasts numbering beyond count, their gnashing teeth and scales black as the night itself. The city guard took in hand their spears, but were thrown from the walls like rag dolls. The attackers moved with such unnatural speed, dodging arrows and blades alike. And when the beasts closed in, it was not to slash with tooth and claw, but to grapple and strangle, their victims dying with faces twisted in expressions of horror. The city's mages, too, found themselves helpless—the beasts shrugged off their magic as if it were nothing more than a faint breeze. The city's walls were breached, and the beasts poured in. But they did not come to destroy—they came to capture. They took the young and the old, the weak and the sick, leaving only those who could work. The city's lord, seeing his people being taken, rode out to meet the beasts' leader. The beast, who called himself Aksor, laughed in the lord's face, and with a wave of his clawed hand, the lord was slain. The city's people were enslaved, forced to build a great tower for Aksor and his kind. But one among them would not be broken. Tresdin had been a simple farm girl, but she took up her family's sword and rallied the survivors. Leading a desperate guerrilla war against the invaders, she proved herself a cunning tactician and a master swordswoman. In time, she became known as the Legion Commander, and her forces dealt blow after blow to Aksor's. Finally, she challenged Aksor to single combat—a duel to the death. The beast accepted, confident in his victory. But Tresdin had laid a trap. As Aksor raised his axe for the killing blow, Tresdin's hidden archers struck, felling the beast in an instant. Leaderless, the beasts fled, and Stonehall was freed. Tresdin had proven herself a leader, and in time she became known as the Legion Commander, a name that would inspire fear in her enemies and loyalty in her allies.",
+      "attribute_id": 1,
+      "complexity_id": 1
+    },
+    {
+      "id": 58,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/leshrac.jpg",
+      "title": "Leshrac",
+      "text": "",
+      "description": "Leshrac, Tormented Soul, is an entity torn from the heart of nature, a liminal being half in one plane of existence, half in another. His penetrating intelligence is such that he can never ignore for a moment the agonizing horror at the heart of all creation. Once a great philosopher who sought the meaning of existence, he plumbed the depths of nature with the haunted Chronoptic Crystals, and was forever altered when he looked upon the titanic eldritch beings that created the universe. Filled with despair and madness, he uses his abilities to destroy the world he knows is meaningless, always seeking 'the death of death'. Leshrac is not a god, but he carries the power of one. His abilities rend the fabric of reality, manipulating time and space, matter and energy. He can split the earth itself, creating fissures to trap his enemies, and blast foes with bolts of lightning summoned from the stormy sky. His greatest power is to summon chaotic pulses of damaging energy from other dimensions, destroying everything they touch. He revels in unleashing his abilities on the world, leaving a trail of destruction behind him.",
+      "attribute_id": 3,
+      "complexity_id": 1
+    },
+    {
+      "id": 59,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/life_stealer.jpg",
+      "title": "Lifestealer",
+      "text": "",
+      "description": "In the dungeons of Devarque, a vengeful mage lay in shackles, plotting his escape. He shared his cell with a gibbering creature known as N'aix, a thief cursed by the Vile Council with longevity, so that its life-stealing powers could be used to support the imprisoned mages who fueled the empire's war machine. But N'aix was no mindless beast. It had lived for a thousand years, and in that time had learned much of the magics that had bound it. When the mage's concentration lapsed, N'aix stole a scrap of his life force, and then another, until the mage lay helpless on the cell floor. N'aix then crept close, and with a single savage bite, devoured the mage's head. It then wore the empty body like a suit, and strolled out of the prison, free at last. But freedom was bittersweet, for N'aix found that it craved the taste of living flesh. It roams the land now, a monstrous thing, spreading its curse to all it encounters--for each creature it meets is a potential new host, and each new host a potential tool for murder and mayhem.",
+      "attribute_id": 1,
+      "complexity_id": 2
+    },
+    {
+      "id": 60,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/lina.jpg",
+      "title": "Lina",
+      "text": "",
+      "description": "The sibling rivalries between Lina the Slayer, and her younger sister Rylai, the Crystal Maiden, were the stuff of legend in the temperate kingdom where they spent their quarrelsome childhoods together. Lina always had the advantage, however, for while Crystal was guileless and naive, Lina's fiery ardor was tempered by cunning. While her sister was gentle and kind, Lina was proud and ruthless. And while Rylai's talents lay in the magical control of ice, Lina's passion drew her ever closer to fire. Yet it was a choice that would prove her undoing. For when their hateful parents discovered that Lina had set fire to a local lord's fields in a fit of pique, they reported her to the authorities, who had her arrested and thrown in prison. There she languished, unrepentant, until a mysterious stranger appeared with an offer of freedom if she would use her talents to aid his cause. Lina readily agreed, and with her new patron's help, escaped her captors. Now she roams the lands, a master of fire, sowing flames wherever she goes, always searching for newer and greater conflagrations to start.",
+      "attribute_id": 3,
+      "complexity_id": 1
+    },
+    {
+      "id": 61,
+      "src": "https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/social/lion.jpg",
+      "title": "Lion",
+      "text": "",
+      "description": "Once a Grandmaster of the Demon Witch tradition of sorcery, Lion earned fame among his brethren for fighting valiantly against the knights of King Goff. But when the king discovered that Lion had secretly been practicing the forbidden rite of demon summoning, he had the Grandmaster arrested and subjected to the Inquisition. For the crime of demonology, Lion was sentenced to have his right hand cut off. But rather than lose his hand, Lion fled into exile, and turned his talents to the service of the demon lords he had once summoned. Now Lion is a renegade sorcerer, vending his skills to the highest bidder, an outlaw hunted by his own order. He casts his spells with precision, hexing his enemies from afar or blasting them with demonic energies. But every incantation, every curse takes its toll, and with each spell cast Lion risks total damnation.",
+      "attribute_id": 3,
+      "complexity_id": 1
+    }
+  ]
+}
